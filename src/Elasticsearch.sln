@@ -65,6 +65,7 @@ ProjectSection(SolutionItems) = preProject
 	..\build\NEST.nuspec = ..\build\NEST.nuspec
 	..\NuGet.config = ..\NuGet.config
 	..\build\Elasticsearch.Net.nuspec = ..\build\Elasticsearch.Net.nuspec
+	..\build\Elasticsearch.Net.Virtual.nuspec = ..\build\Elasticsearch.Net.Virtual.nuspec
 	..\build\NEST.7xUpgradeAssistant.nuspec = ..\build\NEST.7xUpgradeAssistant.nuspec
 EndProjectSection
 EndProject

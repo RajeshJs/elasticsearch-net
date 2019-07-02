@@ -21,6 +21,7 @@ module Projects =
         | ElasticsearchNet
         | NestJsonNetSerializer
         | NestUpgradeAssistant
+        | ElasticsearchNetVirtual
         
     type PrivateProject =
         | Tests
@@ -41,6 +42,7 @@ module Projects =
                 Project Project.Nest; 
                 Project Project.NestJsonNetSerializer;
                 Project Project.NestUpgradeAssistant; 
+                Project Project.ElasticsearchNetVirtual; 
                 PrivateProject PrivateProject.Tests
             ]
 
@@ -50,6 +52,7 @@ module Projects =
                 Project Project.Nest; 
                 Project Project.NestJsonNetSerializer;
                 Project Project.NestUpgradeAssistant;
+                Project Project.ElasticsearchNetVirtual;
             ] 
         static member Tests = seq [PrivateProject PrivateProject.Tests]
         
@@ -71,6 +74,7 @@ module Projects =
             | Project ElasticsearchNet -> "Elasticsearch.Net"
             | Project NestJsonNetSerializer -> "Nest.JsonNetSerializer"
             | Project NestUpgradeAssistant -> "Nest.7xUpgradeAssistant"
+            | Project ElasticsearchNetVirtual -> "Elasticsearch.Net.Virtual"
             | PrivateProject Tests -> "Tests"
             | PrivateProject DocGenerator -> "DocGenerator"
             | PrivateProject ApiGenerator -> "ApiGenerator"
