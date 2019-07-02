@@ -11,6 +11,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+    <ProjectReference Include="..\..\Auxiliary\Elasticsearch.Net.Virtual\Elasticsearch.Net.Virtual.csproj" />
     <PackageReference Include="System.ValueTuple" Version="4.4.0" />
     <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
     <PackageReference Include="Bogus" Version="22.1.2" />
@@ -28,5 +29,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Document\Single\Index\Attachment_Test_Document.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Framework\VirtualClustering" />
   </ItemGroup>
 </Project>
